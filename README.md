@@ -1,2 +1,2 @@
 # py_zinx
-python重写的zinx
+tcp服务器用python重写的zinx
