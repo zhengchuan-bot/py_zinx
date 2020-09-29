@@ -32,5 +32,5 @@ class Message(object):
 
 def new_message_data_pack(msg_id, data):
     # 创建msg对象
-    msg = Message(msg_id, len(data), data)
+    msg = Message(msg_id, len(data.encode("utf-8")), data)
     return msg

@@ -10,7 +10,7 @@ class ping_router(Router):
     def handle(self, request):
         print("handle ....")
         # print(request.get_connection().)
-        request.get_connection().send_msg(msg_id=1, data="hello Mr shu")
+        request.get_connection().send_msg(msg_id=1, data="by by ")
 
     # def post_handle(self,request):
     #     print("post_handle....")

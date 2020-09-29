@@ -8,7 +8,7 @@ tcp_socket.connect(("localhost", 8888))
 
 while True:
     dp = DataPack()
-    msg = dp.pack(new_message_data_pack(msg_id=1, data="hello mr shu"))
+    msg = dp.pack(new_message_data_pack(msg_id=1, data="你好!树先生"))
     tcp_socket.send(msg)
     head_data = tcp_socket.recv(dp.get_head_len())
     msg_head = dp.unpack(head_data)
